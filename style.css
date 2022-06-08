@@ -21,14 +21,60 @@ html{
     background-color: rgba(228, 225, 225, 0.795);
 }
 
-.main{
+.library{
     display:flex;
     flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-around;
 
 }
 
+.main{
+    display:flex;
+    flex-direction: column;
+}
+.buttonContainer{
+    display:flex;
+    justify-content: center;
+    padding:30px;
+}
 .bookCard{
     background-color: aquamarine;
     border-radius: 4px;
+    display:flex;
+    flex-direction: column;
+    min-width:200px;
+    
+}
 
+#addBook{
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+   
+}
+
+.bookForm{
+    position: fixed; /* or absolute */
+    top: 40%;
+    left: 40%;
+    background-color: white;;
+    height:300px;
+    width:450px
+}
+
+form{
+    padding:20px;
+    display:grid;
+    gap:10px;
+    grid-template-rows: 40px 40px 40px;
+    grid-template-columns: 100px 200px;
 }
