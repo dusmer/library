@@ -4,6 +4,7 @@ const theHobbit = new Book("The Hobbit","J.R.R. Tolkien", 295, false);
 const it = new Book("IT","Stephen King", 1295, false);
 
 myLibrary.push(theHobbit);
+myLibrary.push(it);
 
 
 function Book(title, author, pages, read){
@@ -30,12 +31,26 @@ function addBookToLibrary(){
 function displayLibrary(){
     const container = document.querySelector('.library');
 
-    myLibrary.foreach(function(itemsf){
+    myLibrary.forEach(function(book){
+        console.log(book);
+        const bookCard = document.createElement('div');
+        const title = document.createElement('p');
+        const author = document.createElement('p');
+        const pages = document.createElement('p');
+
+        title.textContent = `${book.title}`;
+        author.textContent = `${book.author}`;
+        pages.textContent = `${book.pages}`;
+
+        bookCard.appendChild(title);
+        bookCard.appendChild(author);
+        bookCard.appendChild(pages);
+
         /*const content = document.createElement('div');
         content.classList.add('content');
-        content.textContent = 'This is the glorious text-content!';
+        content.textContent = 'This is the glorious text-content!';*/
     
-        container.appendChild(content);*/
+        container.appendChild(bookCard);
     })
 
 
