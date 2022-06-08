@@ -2,24 +2,26 @@ let myLibrary = [];
 
 const theHobbit = new Book("The Hobbit","J.R.R. Tolkien", 295, false);
 const it = new Book("IT","Stephen King", 1295, false);
+const yearBook = new Book("Year Book","Seth Rogen", 125, false);
+const formContainer = document.querySelector('#addBook');
 
 myLibrary.push(theHobbit);
 myLibrary.push(it);
+myLibrary.push(yearBook);
 
+displayLibrary();
+
+
+const addBookBtn = document.querySelector('#addBookOpen');
+addBookBtn.addEventListener('click', () => {
+    formContainer.style.display = "block";
+});
 
 function Book(title, author, pages, read){
     this.title = title;
     this.author = author;
     this.pages = pages;
-    if (read == true){
-        this.read = "read";
-    } else {
-        this.read = "not yet read";
-    }
-
-    this.info = function(){
-        return `${title} by ${author}, ${pages} pages, ${this.read}`;
-    }
+    this.read = read;
 }
 
 
@@ -34,6 +36,7 @@ function displayLibrary(){
     myLibrary.forEach(function(book){
         console.log(book);
         const bookCard = document.createElement('div');
+        bookCard.classList.add('bookCard');
         const title = document.createElement('p');
         const author = document.createElement('p');
         const pages = document.createElement('p');
