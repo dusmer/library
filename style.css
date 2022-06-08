@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    display:grid;
+    grid-template-rows: auto 5fr;
+}
+
+.header{
+    display:flex;
+    justify-content: center;
+    padding:30px;
+    background-color: rgba(228, 225, 225, 0.795);
+}
+
+.main{
+    display:flex;
+    flex-wrap:wrap;
+
+}
+
+.bookCard{
+    background-color: aquamarine;
+    border-radius: 4px;
+
+}
