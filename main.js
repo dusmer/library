@@ -85,7 +85,7 @@ function displayLibrary(){
         
         title.textContent = `${book.title}`;
         author.textContent = `${book.author}`;
-        pages.textContent = `${book.pages}`;
+        pages.textContent = `${book.pages} pages`;
 
         //Create a container and button for the read status
         const readContainer = document.createElement('div');
