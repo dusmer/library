@@ -41,11 +41,14 @@ html{
 
 }
 .bookCard{
-    background-color: aquamarine;
-    border-radius: 4px;
+    background-color: rgb(0, 51, 153);
+    color:white;
+    padding:20px;
+    border-radius: 14px;
     display:flex;
     flex-direction: column;
     min-width:200px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     
 }
 
@@ -79,4 +82,55 @@ form{
     gap:10px;
     grid-template-rows: 40px 40px 40px;
     grid-template-columns: 100px 200px;
+}
+
+.cardAuthor{
+    padding:4px;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: italic;
+    
+}
+
+.cardTitle{
+    padding:4px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.cardPages{
+    padding:4px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.readButton{
+    height:30px;
+    width:100px;
+    margin:10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.removeButton{
+    height:30px;
+    width:100px;
+    margin:10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#addBookOpen{
+    background-color: green;
+    border-radius: 10px;
+    height:30px;
+    width:100px;
+    border: none;
+    color:white;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+#addBookOpen:hover{
+    background-color:rgb(0, 51, 153);
+    cursor: pointer;
 }
