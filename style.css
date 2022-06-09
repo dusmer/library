@@ -26,6 +26,7 @@ html{
     flex-wrap:wrap;
     flex-direction: row;
     justify-content: space-around;
+    gap:140px;
 
 }
 
@@ -37,6 +38,7 @@ html{
     display:flex;
     justify-content: center;
     padding:30px;
+
 }
 .bookCard{
     background-color: aquamarine;
