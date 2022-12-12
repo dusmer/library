@@ -118,7 +118,7 @@ function displayLibrary(){
         container.appendChild(bookCard);
     })
 
-    //Add an event listener for every remove button
+    //Add an event listener for every remove button!
     const removeButtons = document.querySelectorAll('.removeButton');
     removeButtons.forEach((button) => {
 
